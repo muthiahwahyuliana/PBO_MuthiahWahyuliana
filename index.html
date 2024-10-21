@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<HTML>
+
+<Head>
+    <title> Beranda</title>
+    <script type="text/javascript">
+        function bukabuku_tamu() {
+            var a = document.getElementById("div_bukutamu");
+            a.innerHTML += "<p>Buka Buku Tamu</p>";
+        }
+    </script>
+    <style type="Text/css">
+        @import url(style.css);  
+        </style>
+
+</Head>
+
+<Body>
+    <h1 style="color: blue; font-size: 24px">
+        Selamat Datang di Halaman Beranda</h1>
+    <a href="about.html">Tentang Kami</a>
+    <button onclick="bukaBuku_Tamu()">Buka Buku Tamu</button>
+
+    <script language="Javascript">
+        var Nama, Email, Pesan;
+
+        function bukaBuku_Tamu() {
+            //input pengguna
+            Nama = prompt("Isi Nama Anda", "");
+            Email = prompt("Isi Email Anda", "");
+            Pesan = prompt("Isi Pesan Anda", "");
+
+            Data = Nama, Email, Pesan;
+
+            //Menampilkan alert buku tamu
+            alert("Buku tamu dibuka!");
+
+            //output
+            document.write("Data Buku Tamu:", Data);
+        }
+    </script>
+</Body>
